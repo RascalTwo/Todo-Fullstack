@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/RascalTwo/Todo-Frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/RascalTwo/Todo-Backend.git
