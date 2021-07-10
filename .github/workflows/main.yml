@@ -1,4 +1,4 @@
-name: Deploy to Heroku
+name: Heroku
 
 on:
   workflow_dispatch:
