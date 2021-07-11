@@ -1,31 +1,32 @@
-FROM node:lts-alpine
+FROM node:lts-alpine as frontend
 
 WORKDIR /app
 
 
 # Begin frontend
-WORKDIR /app/frontend
 COPY ./frontend/package.json ./frontend/yarn.lock ./
 RUN yarn install
 
-COPY ./frontend /app/frontend
+COPY ./frontend .
 RUN yarn build
 # End frontend
 
 
 # Begin backend
-WORKDIR /app/backend
+FROM node:lts-alpine
+WORKDIR /app
 COPY ./backend/package.json ./backend/yarn.lock ./
 RUN yarn install
 # Install Postgres support
 RUN yarn add pg pg-hstore
 
-COPY ./backend /app/backend
+COPY ./backend .
 RUN yarn build
 # End backend
 
 
-ENV STATIC_DIRECTORY=/app/frontend/public
+ENV STATIC_DIRECTORY=/app/public
 
+COPY --from=frontend /app/public /app/public
 
 CMD yarn start
