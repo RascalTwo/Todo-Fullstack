@@ -1,0 +1,25 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    environment:
+      VITE_SERVER_HOST: localhost:5000
+    volumes:
+      - ./frontend/src:/app/src
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    environment:
+      CORS_ORIGIN: http://localhost:3000
+      STATIC_DIRECTORY: ./public
+    volumes:
+      - ./backend/src:/app/src
+    ports:
+      - 5000:5000
