@@ -6,6 +6,7 @@
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=RascalTwo.Todo-Fullstack)
 [![Heroku](https://github.com/RascalTwo/Todo-Fullstack/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://r2-todo-fullstack.herokuapp.com)
+[![Website](https://img.shields.io/website?url=https://r2-todo-fullstack.herokuapp.com/)](https://r2-todo-fullstack.herokuapp.com/)
 
 <details>
   <summary>Statistics</summary>
