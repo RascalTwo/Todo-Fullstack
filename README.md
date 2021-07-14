@@ -36,7 +36,7 @@
 
 Combination of [![Frontend package.json version](https://img.shields.io/github/package-json/v/RascalTwo/Todo-Frontend?label=Frontend)][frontend] and [![Backend package.json version](https://img.shields.io/github/package-json/v/RascalTwo/Todo-Backend?label=Backend)][backend] as submodules for deployment purposes via [Docker][dockerfile].
 
-The [Frontend][frontend] is first built, then the [Backend][backend], and finally the backend is started and served the [frontend] along with the actual API.
+The [Frontend][frontend] is built, then the [Backend][backend], the assets are copied from the frontend to the backend, and finally the backend is started and serves the frontend assets along with the actual API.
 
 ## Docker
 
