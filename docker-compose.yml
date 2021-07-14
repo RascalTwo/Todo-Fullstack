@@ -16,6 +16,8 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile.dev
+      args:
+        DATABASE_PACKAGES: pg pg-hstore
     environment:
       CORS_ORIGIN: http://localhost:3000
       STATIC_DIRECTORY: ./public

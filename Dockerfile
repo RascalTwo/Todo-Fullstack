@@ -17,8 +17,9 @@ FROM node:lts-alpine
 WORKDIR /app
 COPY ./backend/package.json ./backend/yarn.lock ./
 RUN yarn install
-# Install Postgres support
-RUN yarn add pg pg-hstore
+# Install database packages
+ARG DATABASE_PACKAGES=sqlite3
+RUN yarn add $DATABASE_PACKAGES
 
 COPY ./backend .
 RUN yarn build

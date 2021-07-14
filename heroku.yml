@@ -1,3 +1,5 @@
 build:
+  config:
+    DATABASE_PACKAGES: pg pg-hstore
   docker:
     web: Dockerfile
