@@ -49,7 +49,7 @@ Deployment to [Heroku](../heroku.yml) is achieved using the [Dockerfile][dockerf
 
 ## GitHub Actions
 
-A single [GitHub Action](../.github/actions/main.yml) is used to automate the deployment to heroku, with the help of the [Heroku Deploy](https://github.com/AkhileshNS/heroku-deploy) action.
+A single [GitHub Action](../.github/workflows/main.yml) is used to automate the deployment to heroku, with the help of the [Heroku Deploy](https://github.com/AkhileshNS/heroku-deploy) action.
 
 > Why are you using GitHub Actions to automate deployemnt and not Heroku?
 
