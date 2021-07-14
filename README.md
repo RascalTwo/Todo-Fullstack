@@ -34,7 +34,7 @@
 <code><a href="../.github/workflows/main.yml"><img alt="GitHub Actions" title="GitHub Actions" src="https://raw.githubusercontent.com/github/explore/main/topics/actions/actions.png" width="50" /></a></code>
 <code><img alt="GitHub" title="GitHub" src="https://raw.githubusercontent.com/github/explore/main/topics/github/github.png" width="50" /></code>
 
-Combination of [Frontend][frontend] and [Backend][backend] as submodules for deployment purposes via [Docker][dockerfile].
+Combination of [![Frontend package.json version](https://img.shields.io/github/package-json/v/RascalTwo/Todo-Frontend?label=Frontend)][frontend] and [![Backend package.json version](https://img.shields.io/github/package-json/v/RascalTwo/Todo-Backend?label=Backend)][backend] as submodules for deployment purposes via [Docker][dockerfile].
 
 The [Frontend][frontend] is first built, then the [Backend][backend], and finally the backend is started and served the [frontend] along with the actual API.
 
