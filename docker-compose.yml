@@ -21,7 +21,7 @@ services:
     environment:
       CORS_ORIGIN: http://localhost:3000
       STATIC_DIRECTORY: ./public
-      SEQUELIZE_OPTIONS: '{"dialect": "postgres", "database": "todos", "host": "database", "port": "5432", "username": "postgres", "password": "sergtsop"}'
+      DATABASE_URL: postgres://postgres:sergtsop@database:5432/todos
     volumes:
       - ./backend/src:/app/src
     ports:
