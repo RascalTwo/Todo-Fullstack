@@ -8,6 +8,10 @@
 [![Heroku](https://github.com/RascalTwo/Todo-Fullstack/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://r2-todo-fullstack.herokuapp.com)
 [![Website](https://img.shields.io/website?url=https://r2-todo-fullstack.herokuapp.com/)](https://r2-todo-fullstack.herokuapp.com/)
 
+https://user-images.githubusercontent.com/9403665/128641790-101528de-1d00-4648-83cc-072ddd6bc83f.mp4
+
+https://user-images.githubusercontent.com/9403665/128641800-efe2fb47-f9ff-416e-962f-022396e82928.mp4
+
 <details>
   <summary>Statistics</summary>
 
