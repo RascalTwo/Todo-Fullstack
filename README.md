@@ -4,6 +4,8 @@
 
 # Todo Fullstack
 
+Live-synchronized Todo app.
+
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=RascalTwo.Todo-Fullstack)
 [![Heroku](https://github.com/RascalTwo/Todo-Fullstack/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://r2-todo-fullstack.herokuapp.com)
 [![Website](https://img.shields.io/website?url=https://r2-todo-fullstack.herokuapp.com/)](https://r2-todo-fullstack.herokuapp.com/)
@@ -11,6 +13,8 @@
 https://user-images.githubusercontent.com/9403665/128641790-101528de-1d00-4648-83cc-072ddd6bc83f.mp4
 
 https://user-images.githubusercontent.com/9403665/128641800-efe2fb47-f9ff-416e-962f-022396e82928.mp4
+
+**Link to project:** https://r2-todo-fullstack.herokuapp.com/
 
 <details>
   <summary>Statistics</summary>
@@ -41,6 +45,24 @@ https://user-images.githubusercontent.com/9403665/128641800-efe2fb47-f9ff-416e-9
 Combination of [![Frontend package.json version](https://img.shields.io/github/package-json/v/RascalTwo/Todo-Frontend?label=Frontend)][frontend] and [![Backend package.json version](https://img.shields.io/github/package-json/v/RascalTwo/Todo-Backend?label=Backend)][backend] as submodules for deployment purposes via [Docker][dockerfile].
 
 The [Frontend][frontend] is built, then the [Backend][backend], the assets are copied from the frontend to the backend, and finally the backend is started and serves the frontend assets along with the actual API.
+
+## How It's Made
+
+**Tech used:** HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, Sequelize, Docker, Heroku, GitHub Actions, Material UI, Vite, React
+
+First is the Backend, which is a Node.js server with Express.js and Sequelize, written using the MVC architecture, fully usable via both the REST API and WebSocket API.
+
+Then is the Frontend, which is a React app built with Vite, using Material UI, using the Context API for state management.
+
+Both are written in Typescript, and managed via both Docker and GitHub Actions, being merged into a single deployment via this very repository.
+
+## Optimizations
+
+While the API is quite optimized - allowing for both usage of the traditional REST API & WebSocket API - the offline-list could be improved by transforming the Frontend into a PWA.
+
+## Lessons Learned
+
+While not my first time using any of these particular technologies, combining them all together with a multi-repo setup was a great experience.
 
 ## Docker
 
